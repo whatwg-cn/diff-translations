@@ -1,0 +1,15 @@
+.hide {
+  display: none;
+}
+.contents {
+  display: flex;
+  width: 100%;
+}
+.contents > div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+pre, code {
+  white-space: pre-wrap;
+}

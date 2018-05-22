@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>whatwg-cn 翻译 diff 工具</title>
+  <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+  <div class="app">
+    <form class="pr">
+      <input name="number" type="number" placeholder="Pull Request Number">
+      <button type="submit">获取信息</button>
+      <span class="loading hide">正在加载……</span>
+    </form>
+    <div class="files">
+      <!-- placeholder -->
+    </div>
+  </div>
+  <template id="single-file">
+    <details open>
+      <summary slot-filename></summary>
+      <div class="contents">
+        <div class="before" slot-before></div>
+        <div class="after" slot-after></div>
+      </div>
+    </details>
+  </template>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
